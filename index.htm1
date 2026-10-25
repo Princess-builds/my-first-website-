@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Princess Builds</title>
+<style>
+body { background: #0d1117; color: white; font-family: sans-serif; text-align: center; padding: 50px; }
+h1 { color: #58a6ff; font-size: 40px; }
+p { font-size: 18px; }
+.box { background: #161b22; padding: 20px; border-radius: 15px; margin-top: 20px; }
+</style>
+</head>
+<body>
+<h1>Hi, I'm Princess-builds 👑</h1>
+<p>Future Developer from Accra, Ghana</p>
+<div class="box">
+<p>🚀 My first website built tonight at 1:47 AM</p>
+<p>Day 1 of my developer journey</p>
+</div>
+<p>Made with love in Ghana 🇬🇭</p>
+</body>
+</html>
