@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Princess Builds 👑</title>
+<link rel="apple-touch-icon" href="029c0405-5970-1d35-ee48-99e67038fcde.jpeg">
+<style>
+body{background:#ffe6f2;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;font-family:sans-serif;overflow:hidden}
+.card{background:white;padding:40px;border-radius:20px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.1);z-index:10}
+button{background:#e91e63;color:white;border:none;padding:12px 24px;border-radius:25px;font-size:16px;cursor:pointer}
+.confetti{position:fixed;font-size:24px;animation:fall 3s linear forwards}
+@keyframes fall{0%{transform:translateY(-100vh) rotate(0deg)}100%{transform:translateY(100vh) rotate(720deg)}}
+#msg{display:none;margin-top:15px;color:#e91e63;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>👑 Princess Builds 💖</h1>
+<p>My first website is LIVE!</p>
+<button onclick="celebrate()">Follow Me ✨</button>
+<p id="msg">Yay! Thanks for believing in Princess! 👑💖<br>Built in Accra, Ghana! 🇬🇭</p>
+</div>
+<script>
+function celebrate(){
+ document.getElementById('msg').style.display='block';
+ for(let i=0;i<30;i++){
+  let c=document.createElement('div');
+  c.className='confetti';
+  c.innerHTML=['💖','👑','✨','🎉','💕'][Math.floor(Math.random()*5)];
+  c.style.left=Math.random()*100+'vw';
+  c.style.animationDelay=Math.random()*0.5+'s';
+  document.body.appendChild(c);
+  setTimeout(()=>c.remove(),3000);
+ }
+}
+</script>
+</body>
+</html>
